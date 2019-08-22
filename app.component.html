@@ -1,0 +1,28 @@
+<div>
+	<h4>DataBinding</h4>
+	Firstname:{{firstname}}<br>
+	Lastname:{{lastname}}<br>
+	Pho no:{{phoneno}}<br>
+	Age:{{age}}<br>
+	Receive News Latters: {{receivenewsletters}}<br>
+	Gender:{{gender}}<br>
+	Country:{{country}}<br>
+	<a [href]="address">Click here</a><hr>
+	Firstname:<input type="text" [(ngModel)]="firstname" name="firstname"><br>
+	Lastname:<input type="text" [(ngModel)]="lastname" name="lastname"><br>
+	Phone no:<input type="text" [(ngModel)]="phoneno" name="phoneno"><br>
+	Age:<input type="text" [(ngModel)]="age" name="age"><br>
+	Receive News Latters:<input type="checkbox" [(ngModel)]="receivenewsletters"><br>
+	Gender:
+	<input type="radio" [(ngModel)]="gender" name="gender" value="Male">Male
+	<input type="radio" [(ngModel)]="gender" name="gender" value="Female">Female<br>
+    Country:
+    <select [(ngModel)]="country">
+    	<option>select</option>
+    	<option>India</option>
+    	<option>USA</option>
+    	<option>Astralia</option>
+    </select><br>
+	<input type="button" value="ChangeData" (click)="ChangeData()" >
+
+</div>
